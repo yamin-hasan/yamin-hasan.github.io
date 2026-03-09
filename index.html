@@ -1,70 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yamin Hasan | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <!-- SEO essentials -->
+  <title>Yamin Hasan · ethical hacker</title>
+  <meta name="description" content="Yamin Hasan – ethical hacker & cybersecurity enthusiast. Explore projects, skills and a clean anonymous aesthetic.">
+  <meta name="keywords" content="Yamin Hasan, ethical hacker, cybersecurity, penetration testing, OSINT, web security, portfolio">
+  <meta name="author" content="Yamin Hasan">
+  <!-- Open Graph / social -->
+  <meta property="og:title" content="Yamin Hasan · ethical hacker">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yaminhasan.github.io/portfolio">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/000000/ffffff?text=YH">
+  <meta property="og:description" content="anonymous cybersecurity portfolio · 60% white / 30% red / 10% black">
+  <!-- Fonts: Orbitron (headings) + Roboto (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- main style -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <!-- 60% white background overall, black text, red accents -->
+  <div class="site-wrapper">
+    <!-- STICKY HEADER | logo + nav -->
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo" aria-label="YH">YH</div>
+        <nav class="navbar">
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home" class="nav-link active-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <!-- mobile hamburger (minimal) -->
+          <div class="hamburger" id="hamburger" aria-label="menu" role="button" tabindex="0">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-<header>
-    <h1>Yamin Hasan</h1>
-    <p>Web Developer</p>
-</header>
+    <main>
+      <!-- HERO section (rule of thirds: text left, subtle matrix effect) -->
+      <section id="home" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <h1 class="glitch-title">Yamin Hasan</h1>
+            <p class="hero-subtitle">Ethical Hacker | Cybersecurity Enthusiast</p>
+            <p class="hero-intro">finding vulnerabilities before the bad guys. <span class="red-dot">_</span></p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary"><i class="fas fa-code-branch"></i> View Projects</a>
+              <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-animation" aria-hidden="true">
+            <!-- subtle hacker-style background effect: moving dots / code fragments -->
+            <div class="matrix"></div>
+          </div>
+        </div>
+        <!-- subtle red glow under hero -->
+        <div class="hero-glow"></div>
+      </section>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+      <!-- ABOUT section (rule of thirds: image, text, highlights) -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title"><span class="red-accent">//</span> about</h2>
+          <div class="about-grid thirds-layout">
+            <!-- placeholder image (1st third) -->
+            <div class="about-image">
+              <div class="img-placeholder">
+                <i class="fas fa-user-secret"></i>
+                <span>YH</span>
+              </div>
+            </div>
+            <!-- bio (2nd third) -->
+            <div class="about-bio">
+              <p>Anonymous by nature, ethical by choice. I'm <strong class="red-highlight">Yamin Hasan</strong> — I break into systems to make them stronger. Offensive security researcher, CTF player, and open-source contributor.</p>
+              <p class="quote"><i class="fas fa-terminal red-icon"></i> "hack the gap, secure the future"</p>
+            </div>
+            <!-- highlights (3rd third) -->
+            <div class="about-highlights">
+              <div class="highlight-item"><i class="fas fa-shield-alt red-icon"></i> 5+ years recon & pentesting</div>
+              <div class="highlight-item"><i class="fas fa-bug red-icon"></i> 50+ CVEs / bug bounty</div>
+              <div class="highlight-item"><i class="fas fa-globe red-icon"></i> offensive security cert (OSCP)</div>
+              <div class="highlight-item"><i class="fas fa-code red-icon"></i> python & tooling</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        Hello! I'm Yamin Hasan, a passionate web developer who enjoys building
-        modern websites and applications using HTML, CSS and JavaScript.
-    </p>
-</section>
+      <!-- SKILLS section (cards & progress) -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title"><span class="red-accent">//</span> skills</h2>
+          <div class="skills-grid thirds">
+            <div class="skill-card">
+              <i class="fas fa-skull-crosswalk skill-icon"></i>
+              <h3>Penetration Testing</h3>
+              <div class="progress-bar"><span style="width:92%"></span></div>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-network-wired skill-icon"></i>
+              <h3>Network Security</h3>
+              <div class="progress-bar"><span style="width:88%"></span></div>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-search skill-icon"></i>
+              <h3>OSINT</h3>
+              <div class="progress-bar"><span style="width:79%"></span></div>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-linux skill-icon"></i>
+              <h3>Linux (Kali/Parrot)</h3>
+              <div class="progress-bar"><span style="width:95%"></span></div>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-python skill-icon"></i>
+              <h3>Python</h3>
+              <div class="progress-bar"><span style="width:90%"></span></div>
+            </div>
+            <div class="skill-card">
+              <i class="fas fa-lock skill-icon"></i>
+              <h3>Web Security</h3>
+              <div class="progress-bar"><span style="width:85%"></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Git</li>
-    </ul>
-</section>
+      <!-- PROJECTS section – 3 cards -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title"><span class="red-accent">//</span> projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="card-header"><i class="fas fa-dragon"></i></div>
+              <h3>ShadowRecon</h3>
+              <p class="project-desc">Automated OSINT & subdomain enumeration tool with real-time Slack alerts.</p>
+              <div class="tech-used">Python · Shodan · asyncio</div>
+              <a href="#" class="github-icon"><i class="fab fa-github"></i> <span>source</span></a>
+            </div>
+            <div class="project-card">
+              <div class="card-header"><i class="fas fa-shield-halved"></i></div>
+              <h3>WAF-Bypass-Lab</h3>
+              <p class="project-desc">Dockerized environment to test WAF evasion techniques (SQLi/XSS).</p>
+              <div class="tech-used">Docker · ModSecurity · JS</div>
+              <a href="#" class="github-icon"><i class="fab fa-github"></i> <span>source</span></a>
+            </div>
+            <div class="project-card">
+              <div class="card-header"><i class="fas fa-eye"></i></div>
+              <h3>PhishNet</h3>
+              <p class="project-desc">ML-based phishing URL detector + browser extension.</p>
+              <div class="tech-used">Python · TensorFlow · JS</div>
+              <a href="#" class="github-icon"><i class="fab fa-github"></i> <span>source</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+      <!-- CONTACT section (hacker style) -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title"><span class="red-accent">//</span> contact</h2>
+          <div class="contact-grid">
+            <div class="contact-message">
+              <p><i class="fas fa-terminal"></i> <span class="cyan-text">$</span> encrypt & reach out.</p>
+              <p class="small-note">PGP fingerprint: <span class="red-fingerprint">7F2D 9A1C 4E6B 8F3A</span></p>
+              <div class="contact-lines">
+                <div><i class="fas fa-envelope red-icon"></i> <a href="mailto:yamin.h@protonmail.com">yamin.h@protonmail.com</a></div>
+                <div><i class="fab fa-github red-icon"></i> <a href="#">/yh4ck</a></div>
+                <div><i class="fab fa-linkedin red-icon"></i> <a href="#">in/yamin-ethic</a></div>
+              </div>
+            </div>
+            <!-- subtle matrix-ish background -->
+            <div class="contact-glitch" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <div class="project">
-        <h3>Project 1</h3>
-        <p>Simple website built using HTML and CSS.</p>
-    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="copy">
+          <p>© 2025 Yamin Hasan — <span class="red-text">root@anonymous:~#</span> <span class="blinking-cursor">_</span></p>
+        </div>
+        <div class="social-icons">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="keybase"><i class="fab fa-keybase"></i></a>
+        </div>
+        <div class="quote">
+          <small>“encrypt everything, trust zero”</small>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-    <div class="project">
-        <h3>Project 2</h3>
-        <p>JavaScript interactive project.</p>
-    </div>
+  <!-- back to top hidden small (ui enhancement) -->
+  <div class="scroll-reveal-trigger"></div>
 
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <button onclick="sayHello()">Say Hello</button>
-</section>
-
-<footer>
-    <p>© 2026 Yamin Hasan</p>
-</footer>
-
-<script src="script.js"></script>
-
+  <!-- javascript (smooth scroll, hover effects, scroll reveal, mobile menu) -->
+  <script src="script.js"></script>
 </body>
 </html>
